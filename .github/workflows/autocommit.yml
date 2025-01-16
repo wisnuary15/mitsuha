@@ -6,7 +6,7 @@ on:
       - main
 
   schedule:
-    - cron: '0 4,12,15,18,19 * * *' # See https://crontab.guru/#0_4,12,15,18,19_*_*_*
+    - cron: '* * * * *'  
 
 jobs:
   auto_commit:
@@ -24,20 +24,23 @@ jobs:
 
       - name: Commit Changes
         run: |
-          git config --local user.name "Ahmad Fauzy"
-          git config --local user.email "madfauzy28@gmail.com"
+          git config --local user.name "wisnuary15"
+          git config --local user.email "aryswadanawisnu@gmail.com"
           git add -A
 
-          arr[0]="chore(bot): 🔥 auto commit"
-          arr[1]="chore(bot): 💀 auto commit"
-          arr[2]="chore(bot): 👹 auto commit"
-          arr[3]="chore(bot): 👺 auto commit"
-          arr[4]="chore(bot): 🤡 auto commit"
-          arr[5]="chore(bot): 👻 auto commit"
-          arr[6]="chore(bot): 👽 auto commit"
-          arr[7]="chore(bot): 🤖 auto commit"
-          arr[8]="chore(bot): 👾 auto commit"
-          arr[9]="chore(bot): 😈 auto commit"
+          arr[0]="🚀 *Updated:* Auto commit - *Ready for the next adventure!*"
+          arr[1]="🌟 *Changed:* Auto commit - *Taking one step closer to greatness!*"
+          arr[2]="🎉 *Fixed:* Auto commit - *All bugs squashed, let's go!*"
+          arr[3]="💫 *Added:* Auto commit - *A new feature added, smooth sailing ahead!*"
+          arr[4]="✨ *Updated:* Auto commit - *Refreshed and ready for action!*"
+          arr[5]="🌠 *Changed:* Auto commit - *Making improvements one commit at a time!*"
+          arr[6]="🌌 *Fixed:* Auto commit - *Things are looking good, no more issues!*"
+          arr[7]="🌙 *Added:* Auto commit - *Just added something cool, check it out!*"
+          arr[8]="🚀 *Updated:* Auto commit - *Making progress, one commit at a time!*"
+          arr[9]="🌟 *Changed:* Auto commit - *Upgrading to the next level!*"
+          arr[10]="💡 *Improved:* Auto commit - *Better, faster, stronger. We're on fire!*"
+          arr[11]="🔥 *Hotfix:* Auto commit - *Squashed that bug like a pro!*"
+          arr[12]="🌱 *Growing:* Auto commit - *Growth is the key to success!*"
 
           rand=$[$RANDOM % ${#arr[@]}]
 
